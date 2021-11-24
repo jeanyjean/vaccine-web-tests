@@ -60,8 +60,8 @@ Check reservation
     Input Text    name:citizen_id    ${CITIZEN_ID}
     Click Button   Submit
     Wait Until Page Contains    User information:
-    Page Should Contain   Astra
-    Page Should Contain   OGYHSite
+    Page Should Contain   ${VACCINE}
+    Page Should Contain   ${SITE}
 # Test cancel the reservation
 Click My Info page
     Click Element    xpath:/html/body/div[2]/div/div[1]/div[2]/div/div[1]/a
